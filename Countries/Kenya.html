@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya - Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../Assets/CSS/main.css">
+    <style>
+        /* Country Page Specific Styles */
+        .country-header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../Assets/Images/Countries/kenya-bg.jpg');
+            background-size: cover;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .country-flag {
+            width: 200px;
+            border: 2px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .head-of-state {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+            .head-of-state img {
+                width: 200px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .ministries-grid, .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .ministry-card, .attraction-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+            .attraction-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+            }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background: #1abc9c;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Upper Navigation Ribbon -->
+    <nav class="nav-ribbon">
+        <div class="nav-container">
+            <a href="Pages/Workshops.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+            <a href="Pages/Gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+            <a href="Pages/Services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+            <a href="Pages/NewsMedia.html" class="nav-link"><i class="fas fa-newspaper"></i> News & Media</a>
+            <a href="Pages/AboutUs.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
+            <div class="auth-links">
+                <a href="Pages/SignIn.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                <a href="Pages/SignUp.html" class="nav-link signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Country Header -->
+    <header class="country-header">
+        <h1>Republic of Kenya</h1>
+        <img src="/Assets/CSS/Images/Kenya.png" alt="Kenya Flag" class="country-flag">
+    </header>
+
+    <!-- Main Content -->
+    <main class="country-container">
+        <!-- Head of State Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-user-tie"></i> Head of State</h2>
+            <div class="head-of-state">
+                <img src="/Assets/CSS/Images/Ruto.jpg" alt="President of Kenya">
+                <div>
+                    <h3>H.E. Dr. William Samoei Ruto</h3>
+                    <p>5th President of Kenya (since September 13, 2022)</p>
+                    <p>Born December 21, 1966 in Sambut village, Kenya</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-info-circle"></i> About Kenya</h2>
+            <p>Kenya, officially the Republic of Kenya, is a country in Eastern Africa with a population of approximately 54 million people. It is bordered by Tanzania to the south, Uganda to the west, South Sudan to the northwest, Ethiopia to the north, Somalia to the northeast, and the Indian Ocean to the southeast.</p>
+
+            <p>Kenya gained independence from Britain on December 12, 1963, and became a republic in 1964. The capital and largest city is Nairobi, a regional commercial hub. Kenya's economy is the largest in East Africa, with agriculture, tourism, and services being key sectors.</p>
+
+            <p>The country is famous for its scenic landscapes and wildlife preserves. The Maasai Mara National Reserve is known for its annual wildebeest migrations, and Amboseli National Park offers views of Tanzania's Mount Kilimanjaro.</p>
+        </section>
+
+        <!-- National Anthem Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-music"></i> National Anthem</h2>
+            <div class="anthem-lyrics">
+                <h3>Ee Mungu Nguvu Yetu (Oh God of All Creation)</h3>
+
+                <div class="language-versions">
+                    <div class="swahili-version">
+                        <h4>Swahili Version</h4>
+                        <p>
+                            <strong>Kufungua:</strong><br>
+                            Ee Mungu nguvu yetu<br>
+                            Ilete baraka kwetu<br>
+                            Haki iwe ngao na mlinzi<br>
+                            Natukae na undugu<br>
+                            Amani na uhuru<br>
+                            Raha tupate na ustawi
+                        </p>
+                        <p>
+                            <strong>Kati:</strong><br>
+                            Amkeni ndugu zetu<br>
+                            Tufanye sote bidii<br>
+                            Nasi tujitoe kwa nguvu<br>
+                            Nchi yetu ya Kenya<br>
+                            Tunayoipenda<br>
+                            Tuwe tayari kuilinda
+                        </p>
+                        <p>
+                            <strong>Mwisho:</strong><br>
+                            Natujenge taifa letu<br>
+                            Ee, ndio wajibu wetu<br>
+                            Kenya istahili heshima<br>
+                            Tuungane mikono<br>
+                            Pamoja kazini<br>
+                            Kila siku tuwe na shukrani
+                        </p>
+                    </div>
+
+                    <div class="english-version">
+                        <h4>English Version</h4>
+                        <p>
+                            <strong>First Verse:</strong><br>
+                            O God of all creation<br>
+                            Bless this our land and nation<br>
+                            Justice be our shield and defender<br>
+                            May we dwell in unity<br>
+                            Peace and liberty<br>
+                            Plenty be found within our borders
+                        </p>
+                        <p>
+                            <strong>Second Verse:</strong><br>
+                            Let one and all arise<br>
+                            With hearts both strong and true<br>
+                            Service be our earnest endeavor<br>
+                            And our homeland of Kenya<br>
+                            Heritage of splendor<br>
+                            Firm may we stand to defend
+                        </p>
+                        <p>
+                            <strong>Third Verse:</strong><br>
+                            Let all with one accord<br>
+                            In common bond united<br>
+                            Build this our nation together<br>
+                            And the glory of Kenya<br>
+                            The fruit of our labor<br>
+                            Fill every heart with thanksgiving
+                        </p>
+                    </div>
+                </div>
+
+                <audio controls style="margin-top: 1rem; width: 100%; max-width: 400px; display: block;">
+                    <source src="/Assets/Audio/national_anthem_of_kenya_swa_en_lyrics_mp3_44317.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Ministries Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-landmark"></i> Key Ministries</h2>
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <h3>Ministry of Interior</h3>
+                    <p>Responsible for internal security, public administration, and national government coordination.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Foreign Affairs</h3>
+                    <p>Handles Kenya's diplomatic relations and international affairs.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Health</h3>
+                    <p>Oversees healthcare policy and public health services nationwide.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Education</h3>
+                    <p>Manages education policy, schools, and higher education institutions.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Tourism</h3>
+                    <p>Promotes Kenya's tourism industry and wildlife conservation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourist Attractions Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-camera-retro"></i> Tourist Attractions</h2>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Maasai-Mara.jpg" alt="Maasai Mara">
+                    <h3>Maasai Mara National Reserve</h3>
+                    <p>Famous for the Great Migration where over 2 million wildebeest, zebra and gazelle migrate annually. Offers exceptional wildlife viewing.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Amboseli-National-Park.jpg" alt="Amboseli">
+                    <h3>Amboseli National Park</h3>
+                    <p>Known for its large elephant herds and views of Mount Kilimanjaro across the border in Tanzania.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Lamu-Old-Town.jpg" alt="Lamu Island">
+                    <h3>Lamu Old Town</h3>
+                    <p>A UNESCO World Heritage Site, this is the oldest and best-preserved Swahili settlement in East Africa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Facts Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-lightbulb"></i> Did You Know?</h2>
+            <ul>
+                <li>Kenya is home to the world's fastest runners, with Kenyan athletes dominating long-distance running competitions.</li>
+                <li>The Great Rift Valley runs through Kenya, containing some of the world's most important paleoanthropological sites.</li>
+                <li>Kenya has over 40 national parks and reserves, protecting about 8% of its land area.</li>
+                <li>Swahili and English are the official languages, with Swahili being the national language.</li>
+            </ul>
+        </section>
+
+        <a href="Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Footer content same as homepage -->
+        </div>
+    </footer>
+
+    <script src="../../../Assets/JS/main.js"></script>
+</body>
+</html>

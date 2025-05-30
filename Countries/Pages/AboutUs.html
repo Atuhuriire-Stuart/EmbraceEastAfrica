@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Embrace East Africa</title>
+    <link rel="stylesheet" href="../../Assets/CSS/main.css">
+    <style>
+        .about-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.6;
+        }
+
+        .mission-statement {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+            .team-member:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+
+            .team-member img {
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 1rem;
+                border: 4px solid #f1f1f1;
+                transition: all 0.3s ease;
+            }
+
+            .team-member:hover img {
+                border-color: #4CAF50;
+            }
+
+            .team-member h3 {
+                margin: 0.5rem 0;
+                color: #2c3e50;
+            }
+
+            .team-member p {
+                color: #7f8c8d;
+                font-size: 0.9rem;
+                margin: 0.25rem 0;
+            }
+
+        .member-social {
+            margin-top: 1rem;
+        }
+
+            .member-social a {
+                color: #34495e;
+                margin: 0 0.25rem;
+                font-size: 1.1rem;
+            }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation ribbon would go here -->
+    <main class="about-container">
+        <h1>About Embrace East Africa</h1>
+        <p>We are a passionate team dedicated to promoting the rich cultural heritage, breathtaking landscapes, and vibrant communities of East Africa.</p>
+
+        <div class="mission-statement">
+            <h2>Our Mission</h2>
+            <p>To promote regional integration, economic growth, and exchange among East African nations. </p>
+        </div>
+
+        <h2>See some of the events we have attended so as to implement our cause</h2>
+        <div class="team-grid">
+            <!-- Event 1 -->
+            <div class="team-member">
+                <img src="/Assets/CSS/Images/11.jpeg" alt="Director Sarah K.">
+                <h3>Event 1.</h3>
+                <p>Election of leaders</p>
+                <p>Nairobi, Kenya</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="team-member">
+                <img src="/Assets/CSS/Images/12.jpeg" alt="Marketing Manager">
+                <h3>Event 2.</h3>
+                <p>Meet and greet</p>
+                <p>Dar es Salaam, Tanzania</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="team-member">
+                <img src="/Assets/CSS/Images/14.jpeg" alt="Tourism Expert">
+                <h3>Event 3.</h3>
+                <p>Touring the cultural centre</p>
+                <p>Arusha, Tanzania</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="team-member">
+                <img src="/Assets/CSS/Images/16.jpeg" alt="Technology Lead">
+                <h3>Event 4.</h3>
+                <p>Motivation of tourist guides</p>
+                <p>Kampala, Uganda</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Event 5 -->
+            <div class="team-member">
+                <img src="/Assets/CSS/Images/17.jpeg" alt="Cultural Director">
+                <h3>Event 5.</h3>
+                <p>Spoting the would be endagered animal species</p>
+                <p>Zanzibar, Tanzania</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Event 6 -->
+            <div class="team-member">
+                <img src="/Assets/CSS/Images/3.jpeg" alt="Conservation Expert">
+                <h3>Event 6.</h3>
+                <p>Motivating Rwandan recruits</p>
+                <p>Kigali, Rwanda</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <!-- Event 7 -->
+            <div class="team-member">
+                <img src="/Assets/CSS/Images/4.jpeg" alt="Operations Manager">
+                <h3>Event 7.</h3>
+                <p>Meeting Masai cultural leaders</p>
+                <p>Mombasa, Kenya</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Event 8 -->
+            <div class="team-member">
+                <img src="/Assets/CSS/Images/7.jpeg" alt="Community Liaison">
+                <h3>Event 8.</h3>
+                <p>Meeting community Liaisons</p>
+                <p>Bujumbura, Burundi</p>
+                <div class="member-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="../Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </footer>
+    <!-- Font Awesome for social icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

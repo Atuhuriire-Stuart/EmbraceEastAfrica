@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmbraceEastAfrica", "EmbraceEastAfrica.csproj", "{C539A991-15C5-4123-B692-31D0AC391B48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		ContactMessage.cs = ContactMessage.cs
+		Country.cs = Country.cs
+		EastAfricaContext.cs = EastAfricaContext.cs
+		NewLetterSubscriber.cs = NewLetterSubscriber.cs
+		User.cs = User.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C539A991-15C5-4123-B692-31D0AC391B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C539A991-15C5-4123-B692-31D0AC391B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C539A991-15C5-4123-B692-31D0AC391B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C539A991-15C5-4123-B692-31D0AC391B48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4B3B860-B00C-412C-BFE2-7722F2BE56B5}
+	EndGlobalSection
+EndGlobal

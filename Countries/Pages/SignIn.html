@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Embrace East Africa</title>
+    <link rel="stylesheet" href="../../Assets/CSS/main.css">
+    <style>
+        .auth-container {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 0.8rem;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: #1abc9c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation ribbon -->
+    <main class="auth-container">
+        <h1>Sign In</h1>
+
+        <form id="signin-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 1rem;">
+            Don't have an account? <a href="../SignUp/index.html">Sign Up</a>
+        </p>
+    </main>
+    <footer>
+        <a href="../Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </footer>
+</body>
+</html>

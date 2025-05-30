@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda - Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../Assets/CSS/main.css">
+    <style>
+        /* Country Page Specific Styles */
+        .country-header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../Assets/Images/Countries/uganda-bg.jpg');
+            background-size: cover;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .country-flag {
+            width: 200px;
+            border: 2px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .head-of-state {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+            .head-of-state img {
+                width: 200px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .ministries-grid, .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .ministry-card, .attraction-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+            .attraction-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+            }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background: #1abc9c;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Upper Navigation Ribbon -->
+    <nav class="nav-ribbon">
+        <div class="nav-container">
+            <a href="Pages/Workshops.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+            <a href="Pages/Gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+            <a href="Pages/Services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+            <a href="Pages/NewsMedia.html" class="nav-link"><i class="fas fa-newspaper"></i> News & Media</a>
+            <a href="Pages/AboutUs.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
+            <div class="auth-links">
+                <a href="Pages/SignIn.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                <a href="Pages/SignUp.html" class="nav-link signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Country Header -->
+    <header class="country-header">
+        <h1>Republic of Uganda</h1>
+        <img src="/Assets/CSS/Images/Uganda.png" alt="Uganda Flag" class="country-flag">
+    </header>
+
+    <!-- Main Content -->
+    <main class="country-container">
+        <!-- Head of State Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-user-tie"></i> Head of State</h2>
+            <div class="head-of-state">
+                <img src="/Assets/CSS/Images/Uganda-President.jpg" alt="President of Uganda">
+                <div>
+                    <h3>H.E. Yoweri Kaguta Museveni</h3>
+                    <p>President of Uganda (since January 29, 1986)</p>
+                    <p>Born September 15, 1944 in Ntungamo, Uganda</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-info-circle"></i> About Uganda</h2>
+            <p>Uganda, officially the Republic of Uganda, is a landlocked country in East Africa with a population of about 45 million people. It is bordered by South Sudan to the north, Kenya to the east, Tanzania and Rwanda to the south, and the Democratic Republic of the Congo to the west.</p>
+
+            <p>Uganda gained independence from Britain on October 9, 1962. The capital and largest city is Kampala. Uganda's economy has grown significantly in recent decades, with agriculture, services, and oil production being key sectors. The country is known as the "Pearl of Africa" for its natural beauty.</p>
+
+            <p>Uganda is home to diverse wildlife including mountain gorillas, chimpanzees, and the Big Five game animals. It contains the source of the Nile River at Jinja and shares Lake Victoria, Africa's largest lake, with Kenya and Tanzania.</p>
+        </section>
+
+        <!-- National Anthem Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-music"></i> National Anthem</h2>
+            <div class="anthem-lyrics">
+                <h3>Oh Uganda, Land of Beauty</h3>
+
+                <div class="language-versions">
+                    <div class="english-version">
+                        <h4>English Version</h4>
+                        <p>
+                            <strong>Verse 1:</strong><br>
+                            Oh Uganda! may God uphold thee,<br>
+                            We lay our future in thy hand;<br>
+                            United, free for liberty<br>
+                            Together we'll always stand.<br>
+                        </p>
+                        <p>
+                            <strong>Verse 2:</strong><br>
+                            Oh Uganda! the land of freedom,<br>
+                            Our love and labor we give;<br>
+                            And with neighbors all<br>
+                            At our country's call<br>
+                            In peace and friendship we'll live.<br>
+                        </p>
+                        <p>
+                            <strong>Verse 3:</strong><br>
+                            Oh Uganda! the land that feeds us,<br>
+                            By sun and fertile soil grown;<br>
+                            For our own dear land,<br>
+                            We'll always stand,<br>
+                            The Pearl of Africa's Crown.<br>
+                        </p>
+                    </div>
+                </div>
+
+                <audio controls style="margin-top: 1rem; width: 100%; max-width: 400px; display: block;">
+                    <source src="/Assets/Audio/uganda_national_anthem_with_music_vocal_juliana_kanyomozi_and_lyrics_english_mp3_44228.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+
+        <!-- Ministries Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-landmark"></i> Key Ministries</h2>
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <h3>Ministry of Internal Affairs</h3>
+                    <p>Responsible for internal security, immigration, and public administration.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Foreign Affairs</h3>
+                    <p>Handles Uganda's diplomatic relations and international cooperation.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Health</h3>
+                    <p>Oversees national healthcare policy and public health services.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Education & Sports</h3>
+                    <p>Manages education policy and sports development nationwide.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Tourism</h3>
+                    <p>Promotes Uganda's tourism industry and wildlife conservation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourist Attractions Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-camera-retro"></i> Tourist Attractions</h2>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/gorilla-trekking-700x450.jpg" alt="Bwindi Impenetrable Forest">
+                    <h3>Bwindi Impenetrable Forest</h3>
+                    <p>UNESCO World Heritage Site home to nearly half of the world's mountain gorilla population, offering unique gorilla trekking experiences.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Murchison.jpg" alt="Murchison Falls">
+                    <h3>Murchison Falls National Park</h3>
+                    <p>Uganda's largest national park where the Nile River explodes through a narrow gorge to create the spectacular Murchison Falls.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Rwenzori.jpg" alt="Rwenzori Mountains">
+                    <h3>Rwenzori Mountains</h3>
+                    <p>Known as the "Mountains of the Moon," featuring Africa's third highest peak and unique alpine vegetation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Facts Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-lightbulb"></i> Did You Know?</h2>
+            <ul>
+                <li>Uganda is home to over half of the world's remaining mountain gorillas.</li>
+                <li>The Nile River, the world's longest river, starts its 6,650km journey in Uganda at Jinja.</li>
+                <li>Uganda has the youngest population in the world, with over 78% of its population under 30 years.</li>
+                <li>English and Swahili are the official languages, with Luganda being widely spoken in the central region.</li>
+            </ul>
+        </section>
+
+        <a href="Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Footer content same as homepage -->
+        </div>
+    </footer>
+
+    <script src="../../../Assets/JS/main.js"></script>
+</body>
+</html>

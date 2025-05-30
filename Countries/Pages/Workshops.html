@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Workshops - Embrace East Africa</title>
+    <link rel="stylesheet" href="../../Assets/CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .workshops-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .page-intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .workshop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .workshop-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.8rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #1abc9c;
+        }
+
+            .workshop-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            }
+
+            .workshop-card h3 {
+                color: #2c3e50;
+                margin-bottom: 0.8rem;
+                font-size: 1.3rem;
+            }
+
+        .workshop-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+            .workshop-meta span {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+        .workshop-description {
+            color: #34495e;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .workshop-details {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+            .workshop-details p {
+                margin: 0.5rem 0;
+            }
+
+        .register-btn {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+            .register-btn:hover {
+                background-color: #16a085;
+            }
+
+        .skill-level {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+
+        .beginner {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .intermediate {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+
+        .advanced {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        @media (max-width: 768px) {
+            .workshop-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation ribbon -->
+    <main class="workshops-container">
+        <div class="page-intro">
+            <h1>East African Cultural Workshops</h1>
+            <p>Immerse yourself in authentic cultural experiences led by local experts and master artisans</p>
+        </div>
+
+        <div class="workshop-grid">
+            <!-- Workshop 1 -->
+            <div class="workshop-card">
+                <span class="skill-level beginner">Beginner</span>
+                <h3>Traditional Drumming & Dance</h3>
+                <div class="workshop-meta">
+                    <span><i class="fas fa-calendar-alt"></i> Every Saturday</span>
+                    <span><i class="fas fa-clock"></i> 10:00 AM - 12:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Nairobi Cultural Center</span>
+                    <span><i class="fas fa-user-friends"></i> Max 15 participants</span>
+                </div>
+                <div class="workshop-description">
+                    <p>Experience the vibrant rhythms of East Africa with professional drummers teaching traditional beats from Kenya, Tanzania, and Uganda. Learn basic techniques on djembe, ngoma, and kayamba instruments.</p>
+                </div>
+                <div class="workshop-details">
+                    <p><strong>Instructor:</strong> Mzee Juma (20+ years experience)</p>
+                    <p><strong>Includes:</strong> All instruments provided, take-home rhythm guide</p>
+                    <p><strong>Price:</strong> KES 2,500 per session</p>
+                </div>
+                <button class="register-btn">Register Now</button>
+            </div>
+
+            <!-- Workshop 2 -->
+            <div class="workshop-card">
+                <span class="skill-level intermediate">Intermediate</span>
+                <h3>Swahili Language & Culture</h3>
+                <div class="workshop-meta">
+                    <span><i class="fas fa-calendar-alt"></i> Tuesdays & Thursdays</span>
+                    <span><i class="fas fa-clock"></i> 5:30 PM - 7:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Online/Zoom</span>
+                    <span><i class="fas fa-user-friends"></i> Max 10 participants</span>
+                </div>
+                <div class="workshop-description">
+                    <p>Go beyond basic phrases and dive into Swahili proverbs, poetry, and cultural context. Perfect for travelers, expats, or anyone wanting to deepen their understanding of East Africa's lingua franca.</p>
+                </div>
+                <div class="workshop-details">
+                    <p><strong>Instructor:</strong> Prof. Amina Mohamed (University of Dar es Salaam)</p>
+                    <p><strong>Includes:</strong> Cultural handbook, audio recordings</p>
+                    <p><strong>Price:</strong> KES 4,000/month (8 sessions)</p>
+                </div>
+                <button class="register-btn">Register Now</button>
+            </div>
+
+            <!-- Workshop 3 -->
+            <div class="workshop-card">
+                <span class="skill-level beginner">Beginner</span>
+                <h3>East African Cooking Masterclass</h3>
+                <div class="workshop-meta">
+                    <span><i class="fas fa-calendar-alt"></i> Every Sunday</span>
+                    <span><i class="fas fa-clock"></i> 2:00 PM - 5:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Kampala Culinary School</span>
+                    <span><i class="fas fa-user-friends"></i> Max 8 participants</span>
+                </div>
+                <div class="workshop-description">
+                    <p>Learn to prepare authentic dishes from across the region including Ugandan matooke, Kenyan nyama choma, and Zanzibari biryani. Includes market visit to source fresh ingredients.</p>
+                </div>
+                <div class="workshop-details">
+                    <p><strong>Instructor:</strong> Chef Wanjiru Mwangi</p>
+                    <p><strong>Includes:</strong> All ingredients, recipe book, meal enjoyed together</p>
+                    <p><strong>Price:</strong> UGX 75,000 per session</p>
+                </div>
+                <button class="register-btn">Register Now</button>
+            </div>
+
+            <!-- Workshop 4 -->
+            <div class="workshop-card">
+                <span class="skill-level advanced">Advanced</span>
+                <h3>Maasai Beadwork Artistry</h3>
+                <div class="workshop-meta">
+                    <span><i class="fas fa-calendar-alt"></i> Monthly Workshops</span>
+                    <span><i class="fas fa-clock"></i> 9:00 AM - 3:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Maasai Mara Community Center</span>
+                    <span><i class="fas fa-user-friends"></i> Max 6 participants</span>
+                </div>
+                <div class="workshop-description">
+                    <p>Learn traditional Maasai beadwork techniques directly from women artisans. Create your own jewelry while understanding the cultural significance of colors and patterns in Maasai tradition.</p>
+                </div>
+                <div class="workshop-details">
+                    <p><strong>Instructor:</strong> Nalangu Saitoti (Maasai elder)</p>
+                    <p><strong>Includes:</strong> All materials, cultural storytelling session</p>
+                    <p><strong>Price:</strong> KES 6,500 (includes community donation)</p>
+                </div>
+                <button class="register-btn">Register Now</button>
+            </div>
+
+            <!-- Workshop 5 -->
+            <div class="workshop-card">
+                <span class="skill-level beginner">Beginner</span>
+                <h3>East African Storytelling</h3>
+                <div class="workshop-meta">
+                    <span><i class="fas fa-calendar-alt"></i> First Friday of Month</span>
+                    <span><i class="fas fa-clock"></i> 6:30 PM - 8:30 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Arusha Cultural Center</span>
+                    <span><i class="fas fa-user-friends"></i> Max 20 participants</span>
+                </div>
+                <div class="workshop-description">
+                    <p>Experience the ancient art of oral storytelling with traditional tales from Tanzania, Kenya, and beyond. Learn basic storytelling techniques and the cultural context behind these enduring narratives.</p>
+                </div>
+                <div class="workshop-details">
+                    <p><strong>Instructor:</strong> Mwalimu Baraka (Griot storyteller)</p>
+                    <p><strong>Includes:</strong> Story collection booklet</p>
+                    <p><strong>Price:</strong> TZS 35,000 per session</p>
+                </div>
+                <button class="register-btn">Register Now</button>
+            </div>
+
+            <!-- Workshop 6 -->
+            <div class="workshop-card">
+                <span class="skill-level intermediate">Intermediate</span>
+                <h3>Kanga Fabric Design</h3>
+                <div class="workshop-meta">
+                    <span><i class="fas fa-calendar-alt"></i> Weekly Wednesday</span>
+                    <span><i class="fas fa-clock"></i> 10:00 AM - 1:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Dar es Salaam Arts Center</span>
+                    <span><i class="fas fa-user-friends"></i> Max 12 participants</span>
+                </div>
+                <div class="workshop-description">
+                    <p>Explore the history and creation of kanga fabrics. Learn block printing techniques to create your own designs while understanding the hidden messages in traditional Swahili sayings printed on the fabric.</p>
+                </div>
+                <div class="workshop-details">
+                    <p><strong>Instructor:</strong> Mama Asha (3rd generation kanga artist)</p>
+                    <p><strong>Includes:</strong> All materials, take-home kanga piece</p>
+                    <p><strong>Price:</strong> TZS 50,000 per session</p>
+                </div>
+                <button class="register-btn">Register Now</button>
+            </div>
+
+            <!-- Workshop 7 -->
+            <div class="workshop-card">
+                <span class="skill-level beginner">Beginner</span>
+                <h3>Traditional Medicine Workshop</h3>
+                <div class="workshop-meta">
+                    <span><i class="fas fa-calendar-alt"></i> Bi-weekly Saturdays</span>
+                    <span><i class="fas fa-clock"></i> 8:00 AM - 12:00 PM</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Kakamega Forest Reserve</span>
+                    <span><i class="fas fa-user-friends"></i> Max 8 participants</span>
+                </div>
+                <div class="workshop-description">
+                    <p>Learn about traditional Luhya medicine from a local herbalist. Includes forest walk to identify medicinal plants and demonstration of preparation methods for common remedies.</p>
+                </div>
+                <div class="workshop-details">
+                    <p><strong>Instructor:</strong> Mzee Wekesa (Community herbalist)</p>
+                    <p><strong>Includes:</strong> Plant identification guide, herbal tea samples</p>
+                    <p><strong>Price:</strong> KES 3,000 (includes conservation fee)</p>
+                </div>
+                <button class="register-btn">Register Now</button>
+            </div>
+
+            <!-- Workshop 8 -->
+            <div class="workshop-card">
+                <span class="skill-level advanced">Advanced</span>
+                <h3>East African Photography</h3>
+                <div class="workshop-meta">
+                    <span><i class="fas fa-calendar-alt"></i> Monthly Intensive</span>
+                    <span><i class="fas fa-clock"></i> 3-Day Workshop</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Various Locations</span>
+                    <span><i class="fas fa-user-friends"></i> Max 5 participants</span>
+                </div>
+                <div class="workshop-description">
+                    <p>Professional photography workshop focusing on capturing East Africa's landscapes, wildlife, and cultures. Includes field sessions in Nairobi markets, Maasai villages, and Rift Valley landscapes.</p>
+                </div>
+                <div class="workshop-details">
+                    <p><strong>Instructor:</strong> James Mwangi (National Geographic contributor)</p>
+                    <p><strong>Includes:</strong> Transportation, model fees, critique session</p>
+                    <p><strong>Price:</strong> KES 25,000 (3 days)</p>
+                </div>
+                <button class="register-btn">Register Now</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="../Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

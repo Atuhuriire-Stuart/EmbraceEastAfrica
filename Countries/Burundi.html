@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burundi - Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../Assets/CSS/main.css">
+    <style>
+        /* Country Page Specific Styles */
+        .country-header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../Assets/Images/Countries/burundi-bg.jpg');
+            background-size: cover;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .country-flag {
+            width: 200px;
+            border: 2px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .head-of-state {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+            .head-of-state img {
+                width: 200px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .ministries-grid, .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .ministry-card, .attraction-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+            .attraction-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+            }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background: #1abc9c;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Upper Navigation Ribbon -->
+    <nav class="nav-ribbon">
+        <div class="nav-container">
+            <a href="Pages/Workshops.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+            <a href="Pages/Gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+            <a href="Pages/Services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+            <a href="Pages/NewsMedia.html" class="nav-link"><i class="fas fa-newspaper"></i> News & Media</a>
+            <a href="Pages/AboutUs.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
+            <div class="auth-links">
+                <a href="Pages/SignIn.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                <a href="Pages/SignUp.html" class="nav-link signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Country Header -->
+    <header class="country-header">
+        <h1>Republic of Burundi</h1>
+        <img src="/Assets/CSS/Images/Burundi.png" alt="Burundi Flag" class="country-flag">
+    </header>
+
+    <!-- Main Content -->
+    <main class="country-container">
+        <!-- Head of State Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-user-tie"></i> Head of State</h2>
+            <div class="head-of-state">
+                <img src="/Assets/CSS/Images/Burundi-president.jpg" alt="President of Burundi">
+                <div>
+                    <h3>H.E. Évariste Ndayishimiye</h3>
+                    <p>President of Burundi (since June 18, 2020)</p>
+                    <p>Born June 17, 1968 in Giheta, Burundi</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-info-circle"></i> About Burundi</h2>
+            <p>Burundi, officially the Republic of Burundi, is a landlocked country in East Africa with a population of about 12 million people. It is bordered by Rwanda to the north, Tanzania to the east and south, and DR Congo to the west.</p>
+
+            <p>Burundi gained independence from Belgium on July 1, 1962. The capital city is Gitega, while Bujumbura remains the largest city and economic hub. The country is known for its rich cultural heritage and traditional drumming.</p>
+
+            <p>Burundi's economy is primarily based on agriculture, with coffee and tea being the main exports. The country is also home to Lake Tanganyika, one of the world's deepest and oldest freshwater lakes.</p>
+        </section>
+
+        <!-- National Anthem Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-music"></i> National Anthem</h2>
+            <div class="anthem-lyrics">
+                <h3>Burundi Bwacu (Our Burundi)</h3>
+
+                <div class="language-versions">
+                    <div class="kirundi-version">
+                        <h4>Kirundi Version</h4>
+                        <p>
+                            <strong>Verse 1:</strong><br>
+                            Burundi bwacu, Burundi buhire,<br>
+                            Shinga icumu mu mashinga,<br>
+                            Gaba intahe y'ubugabo ku bugingo.<br>
+                            Warapfunywe ntiwapfuye,<br>
+                            Warahabishijwe ntiwahababuka,<br>
+                            Uhagurukana, uhagurukana, uhagurukana, ubugingo urikukira.
+                        </p>
+                        <p>
+                            <strong>Verse 2:</strong><br>
+                            Shinga icumu mu mashinga,<br>
+                            Shinga icumu mu mashinga,<br>
+                            Burundi bwacu, ragi ry'abasokuru,<br>
+                            Ramutswa intahe n'ibihugu,<br>
+                            Ufatanije ishyaka n'ubumwe,<br>
+                            Uhagurukana, uhagurukana, uhagurukana, ubugingo urikukira.
+                        </p>
+                        <p>
+                            <strong>Verse 3:</strong><br>
+                            Burundi bwacu, nkora mutima kuri twese,<br>
+                            Tugutuye amaboko, umutima n'ubuzima,<br>
+                            Kugushima ishyaka.<br>
+                            Reka tukwiregure hamwe,<br>
+                            Tuzane imana y'Burundi,<br>
+                            Uhagurukana, uhagurukana, uhagurukana, ubugingo urikukira.
+                        </p>
+                    </div>
+
+                    <div class="english-version">
+                        <h4>English Translation</h4>
+                        <p>
+                            <strong>Verse 1:</strong><br>
+                            Our Burundi, blessed Burundi,<br>
+                            Take your spear, take your shield,<br>
+                            And the strength of your warriors.<br>
+                            You were beaten but not conquered,<br>
+                            You were humiliated but not enslaved,<br>
+                            Stand up, stand up, stand up, the time has come.
+                        </p>
+                        <p>
+                            <strong>Verse 2:</strong><br>
+                            Take your spear, take your shield,<br>
+                            Take your spear, take your shield,<br>
+                            Our Burundi, heritage of our ancestors,<br>
+                            Be worthy of their sacrifices,<br>
+                            United in heart and mind,<br>
+                            Stand up, stand up, stand up, the time has come.
+                        </p>
+                        <p>
+                            <strong>Verse 3:</strong><br>
+                            Our Burundi, we give you our hearts,<br>
+                            We offer you our arms, our hearts and our lives,<br>
+                            To serve you with joy.<br>
+                            Let us all pray together,<br>
+                            May God bless our Burundi,<br>
+                            Stand up, stand up, stand up, the time has come.
+                        </p>
+                    </div>
+                </div>
+
+                <audio controls style="margin-top: 1rem; width: 100%; max-width: 400px; display: block;">
+                    <source src="/Assets/Audio/national_anthem_of_burundi_burundi_bwacu_mp3_44480.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Ministries Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-landmark"></i> Key Ministries</h2>
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <h3>Ministry of Interior</h3>
+                    <p>Responsible for internal security and local governance.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Foreign Affairs</h3>
+                    <p>Handles Burundi's diplomatic relations and international cooperation.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Health</h3>
+                    <p>Oversees healthcare policy and public health services.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Education</h3>
+                    <p>Manages education policy and schools nationwide.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Environment</h3>
+                    <p>Leads conservation efforts and environmental protection.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourist Attractions Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-camera-retro"></i> Tourist Attractions</h2>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Lake_Tanganyika_Mahale_Mountains_11.jpg" alt="Lake Tanganyika">
+                    <h3>Lake Tanganyika</h3>
+                    <p>One of the world's deepest and oldest freshwater lakes, offering stunning views and biodiversity.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/kibira-national-park.jpg" alt="Kibira National Park">
+                    <h3>Kibira National Park</h3>
+                    <p>A rainforest reserve home to chimpanzees, colobus monkeys, and diverse bird species.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/National-Museum-of-Gitega.jpg" alt="Gitega National Museum">
+                    <h3>Gitega National Museum</h3>
+                    <p>Showcases Burundi's rich cultural heritage, including traditional artifacts and drumming performances.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Facts Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-lightbulb"></i> Did You Know?</h2>
+            <ul>
+                <li>Burundi is one of the smallest countries in Africa, but it has a rich cultural heritage.</li>
+                <li>Drumming is an integral part of Burundian culture and is recognized by UNESCO as an intangible cultural heritage.</li>
+                <li>Lake Tanganyika is home to over 250 species of fish, many of which are found nowhere else in the world.</li>
+                <li>Kirundi and French are the official languages, with Swahili also widely spoken in urban areas.</li>
+            </ul>
+        </section>
+
+        <a href="Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Footer content same as homepage -->
+        </div>
+    </footer>
+
+    <script src="../../../Assets/JS/main.js"></script>
+</body>
+</html>

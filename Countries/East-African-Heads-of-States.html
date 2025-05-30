@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East African Heads of State - Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Assets/CSS/main.css">
+    <style>
+        /* Header and navigation styles would be inherited from main.css */
+
+        /* Leaders Section */
+        .leaders-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .leaders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .leader-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+            .leader-card:hover {
+                transform: translateY(-5px);
+            }
+
+        .leader-image {
+            height: 250px;
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+            .leader-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .placeholder-icon {
+            font-size: 3rem;
+            color: #ddd;
+        }
+
+        .leader-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .leader-name {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .leader-title {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .leader-country {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .country-flag {
+            width: 30px;
+            height: auto;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .leaders-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header would be included from a template -->
+
+    <main>
+        <section class="leaders-section">
+            <div class="section-header">
+                <h1>East African Heads of State</h1>
+                <p>The current leaders of the East African Community member states</p>
+            </div>
+
+            <div class="leaders-grid">
+                <!-- Burundi -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="/Assets/CSS/Images/burundi-president.jpg" alt="President of Burundi">
+                        <!-- Fallback placeholder if image missing -->
+                        <div class="placeholder-icon" style="display: none;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Évariste Ndayishimiye</h3>
+                        <p class="leader-title">President of Burundi</p>
+                        <p>Since June 18, 2020</p>
+                        <div class="leader-country">
+                            <img src="/Assets/CSS/Images/Burundi.png" alt="Burundi Flag" class="country-flag">
+                            <span>Burundi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Democratic Republic of Congo -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="/Assets/CSS/Images/drc-president.jpg" alt="President of DRC">
+                        <div class="placeholder-icon" style="display: none;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Félix Tshisekedi</h3>
+                        <p class="leader-title">President of DRC</p>
+                        <p>Since January 24, 2019</p>
+                        <div class="leader-country">
+                            <img src="/Assets/CSS/Images/DRC.png" alt="DRC Flag" class="country-flag">
+                            <span>DR Congo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kenya -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="/Assets/CSS/Images/Ruto.jpg" alt="President of Kenya">
+                        <div class="placeholder-icon" style="display: none;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">William Ruto</h3>
+                        <p class="leader-title">President of Kenya</p>
+                        <p>Since September 13, 2022</p>
+                        <div class="leader-country">
+                            <img src="/Assets/CSS/Images/Kenya.png" alt="Kenya Flag" class="country-flag">
+                            <span>Kenya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rwanda -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="/Assets/CSS/Images/Rwana-President.jpg" alt="President of Rwanda">
+                        <div class="placeholder-icon" style="display: none;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Paul Kagame</h3>
+                        <p class="leader-title">President of Rwanda</p>
+                        <p>Since April 22, 2000</p>
+                        <div class="leader-country">
+                            <img src="/Assets/CSS/Images/Rwanda.png" alt="Rwanda Flag" class="country-flag">
+                            <span>Rwanda</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- South Sudan -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="/Assets/CSS/Images/President_Barack_Obama_and_First_Lady_Michelle_Obama_greet_His_Excellency_Salva_Kiir_Mayardit,_President_of_the_Republic_of_South_Sudan_(cropped).jpg" alt="President of South Sudan">
+                        <div class="placeholder-icon" style="display: none;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Salva Kiir Mayardit</h3>
+                        <p class="leader-title">President of South Sudan</p>
+                        <p>Since July 9, 2011</p>
+                        <div class="leader-country">
+                            <img src="/Assets/CSS/Images/South-Sudan.png" alt="South Sudan Flag" class="country-flag">
+                            <span>South Sudan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tanzania -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="/Assets/CSS/Images/tanzania.png" alt="President of Tanzania">
+                        <div class="placeholder-icon" style="display: none;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Samia Suluhu Hassan</h3>
+                        <p class="leader-title">President of Tanzania</p>
+                        <p>Since March 19, 2021</p>
+                        <div class="leader-country">
+                            <img src="/Assets/CSS/Images/tanzania.png" alt="Tanzania Flag" class="country-flag">
+                            <span>Tanzania</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uganda -->
+                <div class="leader-card">
+                    <div class="leader-image">
+                        <img src="/Assets/CSS/Images/uganda-president.jpg" alt="President of Uganda">
+                        <div class="placeholder-icon" style="display: none;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div class="leader-info">
+                        <h3 class="leader-name">Yoweri Museveni</h3>
+                        <p class="leader-title">President of Uganda</p>
+                        <p>Since January 29, 1986</p>
+                        <div class="leader-country">
+                            <img src="/Assets/CSS/Images/Uganda.png" alt="Uganda Flag" class="country-flag">
+                            <span>Uganda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer would be included from a template -->
+
+    <script>
+        // Fallback for missing leader images
+        document.addEventListener('DOMContentLoaded', function () {
+            const leaderImages = document.querySelectorAll('.leader-image img');
+
+            leaderImages.forEach(img => {
+                img.onerror = function () {
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                };
+            });
+        });
+    </script>
+</body>
+</html>

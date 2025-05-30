@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Swahili - Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Assets/CSS/main.css">
+    <style>
+        /* Main content styling */
+        .swahili-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .language-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+            .language-header h1 {
+                color: #2c3e50;
+                margin-bottom: 1rem;
+            }
+
+            .language-header img {
+                height: 100px;
+                margin: 1rem 0;
+            }
+
+        /* Lessons sections */
+        .lessons-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .lesson-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+            .lesson-card:hover {
+                transform: translateY(-5px);
+            }
+
+            .lesson-card h3 {
+                color: #e74c3c;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .lesson-card ul {
+                padding-left: 1.5rem;
+            }
+
+            .lesson-card li {
+                margin-bottom: 0.5rem;
+            }
+
+        /* Quick phrases table */
+        .phrases-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+            .phrases-table th, .phrases-table td {
+                padding: 1rem;
+                text-align: left;
+                border-bottom: 1px solid #eee;
+            }
+
+            .phrases-table th {
+                background-color: #2c3e50;
+                color: white;
+            }
+
+            .phrases-table tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+
+        /* Audio player styling */
+        .audio-player {
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .lessons-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header would be included from template -->
+
+    <main class="swahili-container">
+        <section class="language-header">
+            <h1><i class="fas fa-language"></i> Learn Swahili (Kiswahili)</h1>
+            <p>The official language of the East African Community</p>
+            <img src="/Assets/CSS/Images/swahili.jpg" alt="Swahili Language">
+        </section>
+
+        <section>
+            <h2>Basic Swahili Phrases</h2>
+            <table class="phrases-table">
+                <thead>
+                    <tr>
+                        <th>English</th>
+                        <th>Swahili</th>
+                        <th>Pronunciation</th>
+                        <th>Audio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hello</td>
+                        <td>Hujambo / Habari</td>
+                        <td>hoo-JAHM-boh / ha-BA-ree</td>
+                        <td>
+                            <audio controls class="audio-player">
+                                <source src="/Assets/Audio/hello.mp3" type="audio/mpeg">
+                            </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>How are you?</td>
+                        <td>Habari yako?</td>
+                        <td>ha-BA-ree YA-koh</td>
+                        <td>
+                            <audio controls class="audio-player">
+                                <source src="/Assets/Audio/how_are_you.mp3" type="audio/mpeg">
+                            </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I'm fine</td>
+                        <td>Nzuri</td>
+                        <td>n-ZOO-ree</td>
+                        <td>
+                            <audio controls class="audio-player">
+                                <source src="/Assets/Audio/im_fine.mp3" type="audio/mpeg">
+                            </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thank you</td>
+                        <td>Asante</td>
+                        <td>ah-SAHN-teh</td>
+                        <td>
+                            <audio controls class="audio-player">
+                                <source src="/Assets/Audio/thank_you.mp3" type="audio/mpeg">
+                            </audio>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Goodbye</td>
+                        <td>Kwaheri</td>
+                        <td>kwa-HEH-ree</td>
+                        <td>
+                            <audio controls class="audio-player">
+                                <source src="/Assets/Audio/goodbye.mp3" type="audio/mpeg">
+                            </audio>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Swahili Learning Resources</h2>
+            <div class="lessons-section">
+                <div class="lesson-card">
+                    <h3><i class="fas fa-book-open"></i> Beginner Lessons</h3>
+                    <ul>
+                        <li>Greetings and Introductions</li>
+                        <li>Numbers 1-100</li>
+                        <li>Common Verbs</li>
+                        <li>Basic Grammar</li>
+                        <li>Everyday Phrases</li>
+                    </ul>
+                    <a href="#" class="explore-btn">Start Learning</a>
+                </div>
+
+                <div class="lesson-card">
+                    <h3><i class="fas fa-shopping-cart"></i> Market Vocabulary</h3>
+                    <ul>
+                        <li>Food Items</li>
+                        <li>Bargaining Phrases</li>
+                        <li>Money Terms</li>
+                        <li>Measurements</li>
+                        <li>Market Dialogues</li>
+                    </ul>
+                    <a href="#" class="explore-btn">Explore Vocabulary</a>
+                </div>
+
+                <div class="lesson-card">
+                    <h3><i class="fas fa-map-marked-alt"></i> Travel Phrases</h3>
+                    <ul>
+                        <li>Directions</li>
+                        <li>Transportation</li>
+                        <li>Hotel Conversations</li>
+                        <li>Emergency Phrases</li>
+                        <li>Cultural Tips</li>
+                    </ul>
+                    <a href="#" class="explore-btn">Learn Phrases</a>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 3rem; background: #f8f9fa; padding: 2rem; border-radius: 8px;">
+            <h2>About Swahili Language</h2>
+            <p>Swahili (Kiswahili) is a Bantu language spoken by over 100 million people across East Africa. It serves as:</p>
+            <ul>
+                <li>The official language of Tanzania and Kenya</li>
+                <li>The lingua franca of the East African Community</li>
+                <li>One of the working languages of the African Union</li>
+                <li>A language taught in universities worldwide</li>
+            </ul>
+            <p>Learning Swahili will enhance your experience when visiting any East African country and help you connect with local communities.</p>
+        </section>
+    </main>
+
+    <!-- Footer would be included from template -->
+
+    <script>
+        // You could add interactive language learning features here
+        document.addEventListener('DOMContentLoaded', function() {
+            // Future interactive elements could be added
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democratic Republic of Congo - Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../Assets/CSS/main.css">
+    <style>
+        /* Country Page Specific Styles */
+        .country-header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../Assets/Images/Countries/drc-bg.jpg');
+            background-size: cover;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .country-flag {
+            width: 200px;
+            border: 2px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .head-of-state {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+            .head-of-state img {
+                width: 200px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .ministries-grid, .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .ministry-card, .attraction-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+            .attraction-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+            }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background: #1abc9c;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Upper Navigation Ribbon -->
+    <nav class="nav-ribbon">
+        <div class="nav-container">
+            <a href="Pages/Workshops.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+            <a href="Pages/Gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+            <a href="Pages/Services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+            <a href="Pages/NewsMedia.html" class="nav-link"><i class="fas fa-newspaper"></i> News & Media</a>
+            <a href="Pages/AboutUs.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
+            <div class="auth-links">
+                <a href="Pages/SignIn.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                <a href="Pages/SignUp.html" class="nav-link signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Country Header -->
+    <header class="country-header">
+        <h1>Democratic Republic of Congo</h1>
+        <img src="/Assets/CSS/Images/DRC.png" alt="DRC Flag" class="country-flag">
+    </header>
+
+    <!-- Main Content -->
+    <main class="country-container">
+        <!-- Head of State Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-user-tie"></i> Head of State</h2>
+            <div class="head-of-state">
+                <img src="/Assets/CSS/Images/DRC-President.jpg" alt="President of DRC">
+                <div>
+                    <h3>H.E. Félix Tshisekedi</h3>
+                    <p>President of the Democratic Republic of Congo (since January 24, 2019)</p>
+                    <p>Born June 13, 1963 in Kinshasa, DRC</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-info-circle"></i> About DRC</h2>
+            <p>The Democratic Republic of Congo (DRC), also known as Congo-Kinshasa, is the second-largest country in Africa by area and has a population of over 95 million people. It is bordered by nine countries, including Angola, Rwanda, Uganda, and Tanzania.</p>
+
+            <p>DRC is rich in natural resources, including minerals like cobalt and copper, and is home to the Congo Rainforest, the second-largest rainforest in the world. The capital city is Kinshasa, which is also the largest city in the country.</p>
+
+            <p>The Congo River, the world's second-largest river by discharge, flows through the country, providing opportunities for transportation, fishing, and hydroelectric power.</p>
+        </section>
+
+        <!-- National Anthem Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-music"></i> National Anthem</h2>
+            <div class="anthem-lyrics">
+                <h3>Debout Congolais (Arise Congolese)</h3>
+
+                <div class="language-versions">
+                    <div class="french-version">
+                        <h4>French Version</h4>
+                        <p>
+                            <strong>Couplet 1:</strong><br>
+                            Debout Congolais,<br>
+                            Unis par le sort,<br>
+                            Unis dans l'effort pour l'indépendance.<br>
+                            Dressons nos fronts, longtemps courbés<br>
+                            Et pour de bon prenons le plus bel élan,<br>
+                            Dans la paix.
+                        </p>
+                        <p>
+                            <strong>Refrain:</strong><br>
+                            Ô peuple ardent,<br>
+                            Par le labeur,<br>
+                            Nous bâtirons un pays plus beau qu'avant,<br>
+                            Dans la paix.
+                        </p>
+                        <p>
+                            <strong>Couplet 2:</strong><br>
+                            Citoyens, entonnez,<br>
+                            L'hymne sacré de votre solidarité,<br>
+                            Fièrement, saluez<br>
+                            L'emblème d'or de votre souveraineté,<br>
+                            Congo.
+                        </p>
+                        <p>
+                            <strong>Couplet 3:</strong><br>
+                            Don béni, Congo,<br>
+                            Des aïeux, Congo,<br>
+                            Ô pays, Congo,<br>
+                            Bien-aimé, Congo,<br>
+                            Nous peuplerons ton sol et nous assurerons ta grandeur.
+                        </p>
+                        <p>
+                            <strong>Couplet 4:</strong><br>
+                            Trente juin, ô doux soleil,<br>
+                            Trente juin, du trente juin,<br>
+                            Jour sacré, soit le témoin,<br>
+                            Jour sacré, de l'immortel,<br>
+                            Serment de liberté,<br>
+                            Que nous léguons,<br>
+                            À notre postérité,<br>
+                            Pour toujours.
+                        </p>
+                    </div>
+
+                    <div class="english-version">
+                        <h4>English Translation</h4>
+                        <p>
+                            <strong>Verse 1:</strong><br>
+                            Arise Congolese,<br>
+                            United by fate,<br>
+                            United in the struggle for independence.<br>
+                            Let us hold our heads high, so long bowed,<br>
+                            And now, for good, let us move forward,<br>
+                            In peace.
+                        </p>
+                        <p>
+                            <strong>Chorus:</strong><br>
+                            Oh ardent people,<br>
+                            By hard work,<br>
+                            We shall build a country more beautiful than before,<br>
+                            In peace.
+                        </p>
+                        <p>
+                            <strong>Verse 2:</strong><br>
+                            Citizens, sing<br>
+                            The sacred hymn of your solidarity,<br>
+                            Proudly salute<br>
+                            The golden emblem of your sovereignty,<br>
+                            Congo.
+                        </p>
+                        <p>
+                            <strong>Verse 3:</strong><br>
+                            Blessed gift, Congo,<br>
+                            Of our ancestors, Congo,<br>
+                            Oh country, Congo,<br>
+                            Beloved Congo,<br>
+                            We shall people your soil and ensure your greatness.
+                        </p>
+                        <p>
+                            <strong>Verse 4:</strong><br>
+                            Thirtieth of June, oh gentle sun,<br>
+                            Thirtieth of June of the thirtieth of June,<br>
+                            Sacred day, be the witness,<br>
+                            Sacred day, of the immortal,<br>
+                            Oath of freedom,<br>
+                            That we hand down,<br>
+                            To our posterity,<br>
+                            Forever.
+                        </p>
+                    </div>
+                </div>
+
+                <audio controls style="margin-top: 1rem; width: 100%; max-width: 400px; display: block;">
+                    <source src="/Assets/Audio/national_anthem_of_dr_congo_debout_congolais_mp3_44654.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Ministries Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-landmark"></i> Key Ministries</h2>
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <h3>Ministry of Interior</h3>
+                    <p>Responsible for internal security and public administration.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Foreign Affairs</h3>
+                    <p>Handles DRC's diplomatic relations and international cooperation.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Health</h3>
+                    <p>Oversees healthcare policy and public health services.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Education</h3>
+                    <p>Manages education policy and schools nationwide.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Mines</h3>
+                    <p>Manages DRC's vast mineral resources, including cobalt and copper.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourist Attractions Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-camera-retro"></i> Tourist Attractions</h2>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Virunga-national-park.jpg" alt="Virunga National Park">
+                    <h3>Virunga National Park</h3>
+                    <p>A UNESCO World Heritage Site, home to mountain gorillas, active volcanoes, and diverse wildlife.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Congo-River.png" alt="Congo River">
+                    <h3>Congo River</h3>
+                    <p>The world's second-largest river by discharge, offering opportunities for fishing, transportation, and exploration.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Salonga-National-Park.jpg" alt="Salonga National Park">
+                    <h3>Salonga National Park</h3>
+                    <p>The largest tropical rainforest reserve in Africa, home to bonobos and other unique species.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Facts Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-lightbulb"></i> Did You Know?</h2>
+            <ul>
+                <li>DRC is the second-largest country in Africa by area.</li>
+                <li>The Congo Rainforest is the second-largest rainforest in the world, after the Amazon.</li>
+                <li>DRC is one of the world's largest producers of cobalt, a key component in batteries.</li>
+                <li>French is the official language, with Lingala, Swahili, Kikongo, and Tshiluba as national languages.</li>
+            </ul>
+        </section>
+
+        <a href="Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Footer content same as homepage -->
+        </div>
+    </footer>
+
+    <script src="../../../Assets/JS/main.js"></script>
+</body>
+</html>

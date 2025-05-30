@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rwanda - Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../Assets/CSS/main.css">
+    <style>
+        /* Country Page Specific Styles */
+        .country-header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../Assets/Images/Countries/rwanda-bg.jpg');
+            background-size: cover;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .country-flag {
+            width: 200px;
+            border: 2px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .head-of-state {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+            .head-of-state img {
+                width: 200px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .ministries-grid, .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .ministry-card, .attraction-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+            .attraction-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+            }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background: #1abc9c;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Upper Navigation Ribbon -->
+    <nav class="nav-ribbon">
+        <div class="nav-container">
+            <a href="Pages/Workshops.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+            <a href="Pages/Gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+            <a href="Pages/Services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+            <a href="Pages/NewsMedia.html" class="nav-link"><i class="fas fa-newspaper"></i> News & Media</a>
+            <a href="Pages/AboutUs.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
+            <div class="auth-links">
+                <a href="Pages/SignIn.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                <a href="Pages/SignUp.html" class="nav-link signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Country Header -->
+    <header class="country-header">
+        <h1>Republic of Rwanda</h1>
+        <img src="/Assets/CSS/Images/Rwanda.png" alt="Rwanda Flag" class="country-flag">
+    </header>
+
+    <!-- Main Content -->
+    <main class="country-container">
+        <!-- Head of State Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-user-tie"></i> Head of State</h2>
+            <div class="head-of-state">
+                <img src="/Assets/CSS/Images/Rwana-President.jpg" alt="President of Rwanda">
+                <div>
+                    <h3>H.E. Paul Kagame</h3>
+                    <p>President of Rwanda (since April 22, 2000)</p>
+                    <p>Born October 23, 1957 in Tambwe, Rwanda</p>
+                    <p>Led Rwanda's reconstruction after the 1994 genocide</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-info-circle"></i> About Rwanda</h2>
+            <p>Rwanda, officially the Republic of Rwanda, is a landlocked country in East Africa with a population of about 13 million people. It is bordered by Uganda to the north, Tanzania to the east, Burundi to the south, and DR Congo to the west.</p>
+
+            <p>Known as "the land of a thousand hills," Rwanda is famous for its mountainous terrain and is one of Africa's most densely populated countries. Since the 1994 genocide against the Tutsi, Rwanda has made remarkable progress in economic development, social cohesion, and governance.</p>
+
+            <p>Kigali, the capital, is considered one of Africa's cleanest and safest cities. Rwanda has become a leader in environmental protection, banning plastic bags in 2008 and implementing ambitious reforestation programs.</p>
+        </section>
+
+        <!-- National Anthem Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-music"></i> National Anthem</h2>
+            <div class="anthem-lyrics">
+                <h3>Rwanda Nziza (Beautiful Rwanda)</h3>
+
+                <div class="kinyarwanda-version">
+                    <h4>Kinyarwanda Version</h4>
+                    <p>
+                        <strong>Umurongo wa 1:</strong><br>
+                        Rwanda nziza Gihugu cyacu<br>
+                        Wuje imisozi, ibiyaga n'ibirunga<br>
+                        Ngobyi iduhetse gahorane ishya.<br>
+                        Reka tukurate tukuvuge ibigwi<br>
+                        Wowe utubumbiye hamwe twese<br>
+                        Abanyarwanda uko watubyaye<br>
+                        Berwa, sugira, singizwa iteka.
+                    </p>
+                    <p>
+                        <strong>Umurongo wa 2:</strong><br>
+                        Intsinzi ba Rasirayi, bahizi bahagaze<br>
+                        Bafashe ingoma mu Rwanda rwacu<br>
+                        Twishyire kurengera imibereho yacu<br>
+                        Adutorerwa nk'uko by'itego byacu<br>
+                        Nta muntu azatwara uburenganzira<br>
+                        Umuco dusangiye uraturanga<br>
+                        Ururimi rwacu rukaduhuza.
+                    </p>
+                    <p>
+                        <strong>Umurongo wa 3:</strong><br>
+                        Tubyutswe na kazi gakondo<br>
+                        Dukoreranye mu mahoro, mu kuri<br>
+                        Dushyigikirize amahoro yacu<br>
+                        Duharanire inyungu z'igihugu<br>
+                        Twizane mu bwumvikane<br>
+                        U Rwanda rukakira rwubahiro<br>
+                        Intahe y'ubukombe n'ubumwe.
+                    </p>
+                </div>
+
+                <audio controls style="margin-top: 1rem; width: 100%; max-width: 400px; display: block;">
+                    <source src="/Assets/Audio/republic_of_rwanda_national_anthem_rwanda_nziza_mp3_44420.mp3" type="audio/mpeg">
+                    Urubuga rwawe ntirushobora kwerekana ingingo y'ijwi.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Ministries Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-landmark"></i> Key Ministries</h2>
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <h3>Ministry of Local Government</h3>
+                    <p>Oversees decentralization and local administration.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Foreign Affairs</h3>
+                    <p>Handles international relations and cooperation.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Health</h3>
+                    <p>Manages healthcare system and universal health coverage.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Education</h3>
+                    <p>Responsible for Rwanda's acclaimed education system.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Environment</h3>
+                    <p>Leads conservation efforts and green initiatives.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourist Attractions Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-camera-retro"></i> Tourist Attractions</h2>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Volcanoes-National-Park1.jpg" alt="Volcanoes National Park">
+                    <h3>Volcanoes National Park</h3>
+                    <p>Home to endangered mountain gorillas, made famous by Dian Fossey's research. Offers incredible gorilla trekking experiences.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Nyungwe-forest.jpg" alt="Nyungwe Forest">
+                    <h3>Nyungwe Forest National Park</h3>
+                    <p>One of Africa's oldest rainforests with 13 primate species including chimpanzees and colobus monkeys. Features canopy walkway.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Genocide-memorial.jpg" alt="Kigali Genocide Memorial">
+                    <h3>Kigali Genocide Memorial</h3>
+                    <p>Powerful memorial documenting the 1994 genocide against the Tutsi, honoring victims and promoting reconciliation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Facts Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-lightbulb"></i> Did You Know?</h2>
+            <ul>
+                <li>Rwanda is the first country in the world with a female majority in parliament (61% as of 2023).</li>
+                <li>The country has a monthly community service day called Umuganda where citizens clean neighborhoods.</li>
+                <li>Rwanda has the highest representation of women in government globally.</li>
+                <li>Kinyarwanda, French, and English are the official languages, with Kinyarwanda spoken by nearly all Rwandans.</li>
+            </ul>
+        </section>
+
+        <a href="Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Footer content same as homepage -->
+        </div>
+    </footer>
+
+    <script src="../../../Assets/JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzania - Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../Assets/CSS/main.css">
+    <style>
+        /* Country Page Specific Styles */
+        .country-header {
+            text-align: center;
+            padding: 2rem 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../../Assets/Images/Countries/tanzania-bg.jpg');
+            background-size: cover;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .country-flag {
+            width: 200px;
+            border: 2px solid white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+        .head-of-state {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+            .head-of-state img {
+                width: 200px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .ministries-grid, .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .ministry-card, .attraction-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+            .attraction-card img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+            }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background: #1abc9c;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Upper Navigation Ribbon -->
+    <nav class="nav-ribbon">
+        <div class="nav-container">
+            <a href="Pages/Workshops.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+            <a href="Pages/Gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+            <a href="Pages/Services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+            <a href="Pages/NewsMedia.html" class="nav-link"><i class="fas fa-newspaper"></i> News & Media</a>
+            <a href="Pages/AboutUs.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
+            <div class="auth-links">
+                <a href="Pages/SignIn.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                <a href="Pages/SignUp.html" class="nav-link signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Country Header -->
+    <header class="country-header">
+        <h1>United Republic of Tanzania</h1>
+        <img src="/Assets/CSS/Images/tanzania.png" alt="Tanzania Flag" class="country-flag">
+    </header>
+
+    <!-- Main Content -->
+    <main class="country-container">
+        <!-- Head of State Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-user-tie"></i> Head of State</h2>
+            <div class="head-of-state">
+                <img src="/Assets/CSS/Images/Tanzanian-President-Samia-Suluhu-Hassan-676x676.png" alt="President of Tanzania">
+                <div>
+                    <h3>H.E. Samia Suluhu Hassan</h3>
+                    <p>6th President of Tanzania (since March 19, 2021)</p>
+                    <p>Born January 27, 1960 in Zanzibar</p>
+                    <p>First female president of Tanzania</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-info-circle"></i> About Tanzania</h2>
+            <p>Tanzania, officially the United Republic of Tanzania, is a country in East Africa with a population of about 61 million people. It is bordered by Kenya and Uganda to the north, Rwanda, Burundi and DR Congo to the west, and Zambia, Malawi and Mozambique to the south.</p>
+
+            <p>Tanzania was formed in 1964 through the union of Tanganyika and Zanzibar. The capital is Dodoma, while Dar es Salaam is the largest city and commercial hub. Tanzania has one of Africa's fastest growing economies, with agriculture, mining, and tourism as key sectors.</p>
+
+            <p>Tanzania is home to Mount Kilimanjaro (Africa's highest peak), Serengeti National Park, and the Zanzibar Archipelago. It contains over 30% of its land area as protected nature reserves.</p>
+        </section>
+
+        <!-- National Anthem Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-music"></i> National Anthem</h2>
+            <div class="anthem-lyrics">
+                <h3>Mungu Ibariki Afrika (God Bless Africa)</h3>
+
+                <div class="language-versions">
+                    <div class="swahili-version">
+                        <h4>Swahili Version</h4>
+                        <p>
+                            <strong>Beti ya Kwanza:</strong><br>
+                            Mungu ibariki Afrika<br>
+                            Wabariki viongozi wake<br>
+                            Hekima, umoja na amani<br>
+                            Hizi ni ngao zetu<br>
+                            Afrika na watu wake
+                        </p>
+                        <p>
+                            <strong>Beti ya Pili:</strong><br>
+                            Ibariki Tanzania<br>
+                            Tanzania yetu hakika<br>
+                            Tuwe na shukurani<br>
+                            Tuwe na amani<br>
+                            Tuwe na uhuru na umoja
+                        </p>
+                        <p>
+                            <strong>Beti ya Tatu:</strong><br>
+                            Mungu ibariki Tanzania<br>
+                            Daraja la kuwanisha<br>
+                            Taifa letu litubariki<br>
+                            Tuweze kuishi kwa amani<br>
+                            Umoja na undugu wetu
+                        </p>
+                    </div>
+
+                    <div class="english-version">
+                        <h4>English Translation</h4>
+                        <p>
+                            <strong>Verse 1:</strong><br>
+                            God bless Africa<br>
+                            Bless its leaders<br>
+                            Wisdom, unity and peace<br>
+                            These are our shields<br>
+                            Africa and its people
+                        </p>
+                        <p>
+                            <strong>Verse 2:</strong><br>
+                            Bless Tanzania<br>
+                            Our beloved Tanzania<br>
+                            Let us be thankful<br>
+                            Let us have peace<br>
+                            Let us have freedom and unity
+                        </p>
+                        <p>
+                            <strong>Verse 3:</strong><br>
+                            God bless Tanzania<br>
+                            The bridge to unite<br>
+                            Bless our nation<br>
+                            That we may live in peace<br>
+                            Our unity and brotherhood
+                        </p>
+                    </div>
+                </div>
+
+                <audio controls style="margin-top: 1rem; width: 100%; max-width: 400px; display: block;">
+                    <source src="/Assets/Audio/national_anthem_tanzania_mungu_ibariki_afrika_mp3_44379.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Ministries Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-landmark"></i> Key Ministries</h2>
+            <div class="ministries-grid">
+                <div class="ministry-card">
+                    <h3>Ministry of Home Affairs</h3>
+                    <p>Responsible for internal security, immigration, and public administration.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Foreign Affairs</h3>
+                    <p>Handles Tanzania's diplomatic relations and East African Community affairs.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Health</h3>
+                    <p>Oversees national healthcare policy and public health services.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Education</h3>
+                    <p>Manages education policy and institutions nationwide.</p>
+                </div>
+                <div class="ministry-card">
+                    <h3>Ministry of Natural Resources & Tourism</h3>
+                    <p>Promotes tourism and manages wildlife conservation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourist Attractions Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-camera-retro"></i> Tourist Attractions</h2>
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Serengeti-National-Park.jpg" alt="Serengeti National Park">
+                    <h3>Serengeti National Park</h3>
+                    <p>Famous for the annual Great Migration of over 1.5 million wildebeest and 250,000 zebras. UNESCO World Heritage Site.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Kilimanjaro_from_Amboseli.jpg" alt="Mount Kilimanjaro">
+                    <h3>Mount Kilimanjaro</h3>
+                    <p>Africa's highest peak at 5,895 meters with snow-capped summit. Popular hiking destination with several routes to the top.</p>
+                </div>
+                <div class="attraction-card">
+                    <img src="/Assets/CSS/Images/Zanzibar-Archipelago.jpg" alt="Zanzibar">
+                    <h3>Zanzibar Archipelago</h3>
+                    <p>Tropical islands with white sand beaches, historic Stone Town (UNESCO site), and spice plantations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Facts Section -->
+        <section class="content-section">
+            <h2><i class="fas fa-lightbulb"></i> Did You Know?</h2>
+            <ul>
+                <li>Tanzania has the highest concentration of wildlife animals per square kilometer in the world.</li>
+                <li>Lake Tanganyika in western Tanzania is the world's second deepest lake (1,470m).</li>
+                <li>Olduvai Gorge in northern Tanzania is one of the most important paleoanthropological sites, with fossils dating back millions of years.</li>
+                <li>Swahili is the national language, with English used in higher education and administration.</li>
+            </ul>
+        </section>
+
+        <a href="Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Footer content same as homepage -->
+        </div>
+    </footer>
+
+    <script src="../../../Assets/JS/main.js"></script>
+</body>
+</html>

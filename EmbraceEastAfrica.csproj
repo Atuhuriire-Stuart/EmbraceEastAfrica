@@ -1,0 +1,232 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C539A991-15C5-4123-B692-31D0AC391B48}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmbraceEastAfrica</RootNamespace>
+    <AssemblyName>EmbraceEastAfrica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44346</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\EastAfricaDB.mdf" />
+    <Content Include="App_Data\EastAfricaDB_log.ldf">
+      <DependentUpon>EastAfricaDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="Assets\Audio\thank_you.mp3" />
+    <Content Include="Assets\Audio\east-african-anthem.mp3" />
+    <Content Include="Assets\Audio\how_are_you.mp3" />
+    <Content Include="Assets\Audio\hello.mp3" />
+    <Content Include="Assets\Audio\goodbye.mp3" />
+    <Content Include="Assets\Audio\national_anthem_of_burundi_burundi_bwacu_mp3_44480.mp3" />
+    <Content Include="Assets\Audio\national_anthem_of_dr_congo_debout_congolais_mp3_44654.mp3" />
+    <Content Include="Assets\Audio\national_anthem_of_kenya_swa_en_lyrics_mp3_44317.mp3" />
+    <Content Include="Assets\Audio\national_anthem_tanzania_mungu_ibariki_afrika_mp3_44379.mp3" />
+    <Content Include="Assets\Audio\im_fine.mp3" />
+    <Content Include="Assets\Audio\republic_of_rwanda_national_anthem_rwanda_nziza_mp3_44420.mp3" />
+    <Content Include="Assets\Audio\south_sudan_mp3_44582.mp3" />
+    <Content Include="Assets\Audio\uganda_national_anthem_with_music_vocal_juliana_kanyomozi_and_lyrics_english_mp3_44228.mp3" />
+    <Content Include="Assets\CSS\Images\11.jpeg" />
+    <Content Include="Assets\CSS\Images\12.jpeg" />
+    <Content Include="Assets\CSS\Images\14.jpeg" />
+    <Content Include="Assets\CSS\Images\16.jpeg" />
+    <Content Include="Assets\CSS\Images\17.jpeg" />
+    <Content Include="Assets\CSS\Images\3.jpeg" />
+    <Content Include="Assets\CSS\Images\4.jpeg" />
+    <Content Include="Assets\CSS\Images\7.jpeg" />
+    <Content Include="Assets\CSS\Images\Amboseli-National-Park.jpg" />
+    <Content Include="Assets\CSS\Images\beach_in_zanzibar_kendwa_beach-1.jpg" />
+    <Content Include="Assets\CSS\Images\Burundi-president.jpg" />
+    <Content Include="Assets\CSS\Images\Burundi.png" />
+    <Content Include="Assets\CSS\Images\Bwindi-Gorilla-Safaris-1600x600.jpg" />
+    <Content Include="Assets\CSS\Images\Congo-River.png" />
+    <Content Include="Assets\CSS\Images\Cross-Border.jpg" />
+    <Content Include="Assets\CSS\Images\Cultural-Festival.jpg" />
+    <Content Include="Assets\CSS\Images\Culture.jpg" />
+    <Content Include="Assets\CSS\Images\download.png" />
+    <Content Include="Assets\CSS\Images\DRC-President.jpg" />
+    <Content Include="Assets\CSS\Images\East African landscape.jpg" />
+    <Content Include="Assets\CSS\Images\East-African-Community-Summit.jpg" />
+    <Content Include="Assets\CSS\Images\Genocide-memorial.jpg" />
+    <Content Include="Assets\CSS\Images\gorilla-trekking-700x450.jpg" />
+    <Content Include="Assets\CSS\Images\kibira-national-park.jpg" />
+    <Content Include="Assets\CSS\Images\Kilimanjaro_from_Amboseli.jpg" />
+    <Content Include="Assets\CSS\Images\lakevictoria3.jpg" />
+    <Content Include="Assets\CSS\Images\Lake_Tanganyika_Mahale_Mountains_11.jpg" />
+    <Content Include="Assets\CSS\Images\Lamu-Old-Town.jpg" />
+    <Content Include="Assets\CSS\Images\Lions-in-Maasai-Mara.jpg" />
+    <Content Include="Assets\CSS\Images\Maasai-Mara.jpg" />
+    <Content Include="Assets\CSS\Images\Malaria-Eradication.jpg" />
+    <Content Include="Assets\CSS\Images\Masai-warriors-dancing.jpg" />
+    <Content Include="Assets\CSS\Images\Mt-Kilimanjaro.jpg" />
+    <Content Include="Assets\CSS\Images\Murchison.jpg" />
+    <Content Include="Assets\CSS\Images\musanze-960x450.jpg" />
+    <Content Include="Assets\CSS\Images\Nairobi-city-skyline.jpg" />
+    <Content Include="Assets\CSS\Images\National-Museum-of-Gitega.jpg" />
+    <Content Include="Assets\CSS\Images\Nimule-National-Park.png" />
+    <Content Include="Assets\CSS\Images\Nyungwe-forest.jpg" />
+    <Content Include="Assets\CSS\Images\Passport.jpg" />
+    <Content Include="Assets\CSS\Images\President_Barack_Obama_and_First_Lady_Michelle_Obama_greet_His_Excellency_Salva_Kiir_Mayardit,_President_of_the_Republic_of_South_Sudan_%28cropped%29.jpg" />
+    <Content Include="Assets\CSS\Images\Regional-Tourism.png" />
+    <Content Include="Assets\CSS\Images\Ruto.jpg" />
+    <Content Include="Assets\CSS\Images\Rwana-President.jpg" />
+    <Content Include="Assets\CSS\Images\Rwenzori.jpg" />
+    <Content Include="Assets\CSS\Images\Salonga-National-Park.jpg" />
+    <Content Include="Assets\CSS\Images\Serengeti-National-Park.jpg" />
+    <Content Include="Assets\CSS\Images\Standard-gauge.jpg" />
+    <Content Include="Assets\CSS\Images\Sudd_wetland.jpg" />
+    <Content Include="Assets\CSS\Images\swahili.jpg" />
+    <Content Include="Assets\CSS\Images\tanzania.png" />
+    <Content Include="Assets\CSS\Images\DRC.png" />
+    <Content Include="Assets\CSS\Images\Kenya.png" />
+    <Content Include="Assets\CSS\Images\LOGO.jpeg" />
+    <Content Include="Assets\CSS\Images\New_EAC_map.png" />
+    <Content Include="Assets\CSS\Images\Rwanda.png" />
+    <Content Include="Assets\CSS\Images\South-Sudan.png" />
+    <Content Include="Assets\CSS\Images\Tanzanian-President-Samia-Suluhu-Hassan-676x676.png" />
+    <Content Include="Assets\CSS\Images\Tech-hub.jpg" />
+    <Content Include="Assets\CSS\Images\The-White-Nile.jpg" />
+    <Content Include="Assets\CSS\Images\Uganda-President.jpg" />
+    <Content Include="Assets\CSS\Images\Uganda.png" />
+    <Content Include="Assets\CSS\Images\University-exchange.jpg" />
+    <Content Include="Assets\CSS\Images\Virunga-national-park.jpg" />
+    <Content Include="Assets\CSS\Images\Volcanoes-National-Park1.jpg" />
+    <Content Include="Assets\CSS\Images\Wildlife.jpg" />
+    <Content Include="Assets\CSS\Images\Zanzibar-Archipelago.jpg" />
+    <Content Include="Assets\CSS\main.css" />
+    <Content Include="Assets\JS\main.js" />
+    <Content Include="Countries\About-East-African-Passport.html" />
+    <Content Include="Countries\Burundi.html" />
+    <Content Include="Countries\DRC.html" />
+    <Content Include="Countries\East-African-Heads-of-States.html" />
+    <Content Include="Countries\FAQ.html" />
+    <Content Include="Countries\Pages\AboutUs.html" />
+    <Content Include="Countries\Pages\Gallery.html" />
+    <Content Include="Countries\Learn-Swahili.html" />
+    <Content Include="Countries\Pages\NewsMedia.html" />
+    <Content Include="Countries\Pages\Services.html" />
+    <Content Include="Countries\Pages\SignIn.html" />
+    <Content Include="Countries\Pages\SignUp.html" />
+    <Content Include="Countries\Pages\Workshops.html" />
+    <Content Include="Countries\Rwanda.html" />
+    <Content Include="Countries\South-Sudan.html" />
+    <Content Include="Countries\Tanzania.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Countries\Homepage.html" />
+    <Content Include="Countries\Kenya.html" />
+    <Content Include="Countries\Uganda.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53800</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44346/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

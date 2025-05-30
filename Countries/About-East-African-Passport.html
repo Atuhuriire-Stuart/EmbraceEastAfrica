@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About East African Passport - Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Assets/CSS/main.css">
+    <style>
+        /* Main container */
+        .passport-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Header section */
+        .passport-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+            .passport-header h1 {
+                color: #2c3e50;
+                margin-bottom: 1rem;
+            }
+
+            .passport-header img {
+                max-width: 300px;
+                margin: 1rem 0;
+                border-radius: 4px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+        /* Content sections */
+        .passport-section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+            .passport-section h2 {
+                color: #e74c3c;
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+        /* Benefits grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .benefit-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border-left: 4px solid #2c3e50;
+        }
+
+            .benefit-card h3 {
+                color: #2c3e50;
+                margin-bottom: 0.5rem;
+            }
+
+        /* Requirements list */
+        .requirements-list {
+            margin-top: 1rem;
+        }
+
+            .requirements-list li {
+                margin-bottom: 0.8rem;
+                padding-left: 1.5rem;
+                position: relative;
+            }
+
+                .requirements-list li::before {
+                    content: "•";
+                    color: #e74c3c;
+                    font-weight: bold;
+                    position: absolute;
+                    left: 0;
+                }
+
+        /* Application process */
+        .process-steps {
+            counter-reset: step-counter;
+            margin-top: 1.5rem;
+        }
+
+        .process-step {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 1.5rem;
+            counter-increment: step-counter;
+        }
+
+            .process-step::before {
+                content: counter(step-counter);
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #2c3e50;
+                color: white;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+            }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .passport-header img {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header would be included from template -->
+
+    <main class="passport-container">
+        <section class="passport-header">
+            <h1><i class="fas fa-passport"></i> East African Passport</h1>
+            <p>The official travel document for the East African Community</p>
+            <img src="/Assets/CSS/Images/Passport.jpg" alt="East African Passport">
+        </section>
+
+        <section class="passport-section">
+            <h2><i class="fas fa-info-circle"></i> Overview</h2>
+            <p>The East African Passport is a travel document issued by member states of the East African Community (EAC) to their citizens for international travel within the region and beyond. It symbolizes the regional integration and cooperation among EAC partner states.</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Seamless Travel</h3>
+                    <p>Enjoy visa-free movement across all EAC member states with this passport.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>Regional Integration</h3>
+                    <p>Demonstrates your citizenship in the East African Community.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <h3>International Recognition</h3>
+                    <p>Accepted worldwide as a valid travel document.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="passport-section">
+            <h2><i class="fas fa-map-marked-alt"></i> Member States</h2>
+            <p>The East African Passport is available to citizens of these partner states:</p>
+
+            <div class="flags-grid" style="margin-top: 1.5rem;">
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/Burundi.png" alt="Burundi Flag">
+                    </div>
+                    <h3>Burundi</h3>
+                </div>
+
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/DRC.png" alt="DRC Flag">
+                    </div>
+                    <h3>DR Congo</h3>
+                </div>
+
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/Kenya.png" alt="Kenya Flag">
+                    </div>
+                    <h3>Kenya</h3>
+                </div>
+
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/Rwanda.png" alt="Rwanda Flag">
+                    </div>
+                    <h3>Rwanda</h3>
+                </div>
+
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/South-Sudan.png" alt="South Sudan Flag">
+                    </div>
+                    <h3>South Sudan</h3>
+                </div>
+
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/tanzania.png" alt="Tanzania Flag">
+                    </div>
+                    <h3>Tanzania</h3>
+                </div>
+
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/Uganda.png" alt="Uganda Flag">
+                    </div>
+                    <h3>Uganda</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="passport-section">
+            <h2><i class="fas fa-clipboard-list"></i> Requirements</h2>
+            <p>To apply for an East African Passport, you must provide:</p>
+
+            <ul class="requirements-list">
+                <li>Completed application form</li>
+                <li>National ID or birth certificate</li>
+                <li>Recent passport-sized photographs</li>
+                <li>Proof of citizenship from an EAC member state</li>
+                <li>Payment of applicable fees</li>
+                <li>For renewals: Previous passport</li>
+            </ul>
+        </section>
+
+        <section class="passport-section">
+            <h2><i class="fas fa-tasks"></i> Application Process</h2>
+            <p>Follow these steps to obtain your East African Passport:</p>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <h3>Gather Documents</h3>
+                    <p>Collect all required documents listed above.</p>
+                </div>
+
+                <div class="process-step">
+                    <h3>Complete Application</h3>
+                    <p>Fill out the application form available at immigration offices or online portals.</p>
+                </div>
+
+                <div class="process-step">
+                    <h3>Submit Application</h3>
+                    <p>Visit your nearest immigration office with all documents and payment.</p>
+                </div>
+
+                <div class="process-step">
+                    <h3>Biometric Capture</h3>
+                    <p>Have your fingerprints and photo taken at the immigration office.</p>
+                </div>
+
+                <div class="process-step">
+                    <h3>Processing</h3>
+                    <p>Wait for processing (typically 7-14 working days).</p>
+                </div>
+
+                <div class="process-step">
+                    <h3>Collection</h3>
+                    <p>Pick up your passport when notified, or opt for delivery if available.</p>
+                </div>
+            </div>
+
+            <a href="#" class="btn-primary" style="margin-top: 2rem; display: inline-block;">
+                <i class="fas fa-download"></i> Download Application Form
+            </a>
+        </section>
+
+        <section class="passport-section">
+            <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+
+            <div class="faq-item" style="margin-bottom: 1.5rem;">
+                <h3>How long is the East African Passport valid?</h3>
+                <p>The standard East African Passport is valid for 10 years for adults and 5 years for minors (under 18 years).</p>
+            </div>
+
+            <div class="faq-item" style="margin-bottom: 1.5rem;">
+                <h3>Can I use it for international travel outside Africa?</h3>
+                <p>Yes, the East African Passport is recognized internationally, though visa requirements depend on destination countries.</p>
+            </div>
+
+            <div class="faq-item" style="margin-bottom: 1.5rem;">
+                <h3>What's the difference between this and my national passport?</h3>
+                <p>The East African Passport facilitates easier movement within the EAC region while maintaining all functions of your national passport.</p>
+            </div>
+
+            <div class="faq-item" style="margin-bottom: 1.5rem;">
+                <h3>Where can I apply if I'm abroad?</h3>
+                <p>You can apply at your country's embassy or consulate in your current location.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer would be included from template -->
+
+    <script>
+        // You could add interactive elements here like:
+        // - Application status checker
+        // - Office locator map
+        // - Fee calculator
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Future interactive features could be added
+        });
+    </script>
+</body>
+</html>

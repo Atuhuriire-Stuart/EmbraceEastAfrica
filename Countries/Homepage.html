@@ -1,0 +1,717 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embrace East Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../Assets/CSS/main.css">
+    <style>
+        /* Header and Logo Styling */
+        .header-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0;
+            background-color: #f8f9fa;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 1rem;
+        }
+
+        .logo-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #2c3e50;
+            line-height: 1.1;
+            margin: 0;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            color: #555;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        #animated-logo {
+            height: 80px;
+            width: auto;
+        }
+
+        /* Navigation Ribbon */
+        .nav-ribbon {
+            background-color: #2c3e50;
+            width: 100%;
+            padding: 0.8rem 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.3rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+            .nav-link:hover {
+                background-color: #1a252f;
+            }
+
+        .auth-links {
+            margin-left: auto;
+        }
+
+        .signup {
+            background-color: #e74c3c;
+        }
+
+            .signup:hover {
+                background-color: #c0392b;
+            }
+
+        /* Slideshow */
+        .slideshow-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            position: relative;
+        }
+
+        .slideshow-inner {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+        }
+
+            .slide.active {
+                display: block;
+            }
+
+            .slide img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .slideshow-pause {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        /* Map and Mission Section */
+        .map-mission-container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            gap: 2rem;
+        }
+
+        .interactive-map {
+            flex: 3;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+            .interactive-map img {
+                max-width: 100%;
+                max-height: 500px;
+                height: auto;
+                object-fit: contain;
+            }
+
+        .mission-cards {
+            flex: 1;
+            min-width: 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .mission-card {
+            width: 100%;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+            .mission-card > div {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.8s;
+                transform-style: preserve-3d;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+            .mission-card:hover > div {
+                transform: rotateY(180deg);
+            }
+
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .card-front {
+            background: #fff;
+            color: #333;
+        }
+
+            .card-front i {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                color: #2c3e50;
+            }
+
+        .card-back {
+            background: #2c3e50;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+            .card-back p, .card-back ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            .card-back ul {
+                text-align: left;
+                padding-left: 1rem;
+            }
+
+        /* Flags section */
+        .flags-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+            .section-header h2 {
+                color: #2c3e50;
+                font-size: 2rem;
+            }
+
+        .flags-grid {
+            padding: 1rem 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            gap: 1rem;
+            overflow-x: auto;
+        }
+
+        .flag-card {
+            margin-bottom: 1rem;
+            min-width: 120px;
+            text-align: center;
+        }
+
+            .flag-card h3 {
+                margin: 0.5rem 0;
+                font-size: 1rem;
+                color: #2c3e50;
+            }
+
+        .flag-container img {
+            width: 100px;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .explore-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.3rem 0.8rem;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+            .explore-btn:hover {
+                background-color: #1a252f;
+            }
+
+        /* Anthem section */
+        .anthem-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .anthem-lyrics {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+            .anthem-lyrics h3 {
+                color: #2c3e50;
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+
+        /* Footer */
+        .main-footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0 0;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            gap: 2rem;
+        }
+
+        .contact-form, .common-links, .social-media {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1a252f;
+            margin-top: 2rem;
+        }
+
+        /* Form Buttons */
+        .form-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+        }
+
+        .btn-send {
+            padding: 0.5rem 1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .btn-send:hover {
+                background-color: #218838;
+            }
+
+        .btn-clear {
+            padding: 0.5rem 1rem;
+            background-color: #ffc107;
+            color: #212529;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .btn-clear:hover {
+                background-color: #e0a800;
+            }
+
+        .btn-cancel {
+            padding: 0.5rem 1rem;
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            .btn-cancel:hover {
+                background-color: #5a6268;
+            }
+
+        @media (max-width: 768px) {
+            .map-mission-container {
+                flex-direction: column;
+            }
+
+            .interactive-map, .mission-cards {
+                flex: 1 1 100%;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .auth-links {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+
+            .slide img {
+                height: 300px;
+            }
+
+            .form-buttons {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Logo and Navigation -->
+    <header class="header-wrapper">
+        <div class="logo-container">
+            <img src="/Assets/CSS/Images/LOGO.jpeg" alt="Embrace EA Logo" id="animated-logo">
+            <div class="logo-content">
+                <h1 class="logo-text">EMBRACE EAST AFRICA</h1>
+                <p class="tagline">ENGENDERING MOVEMENT,BILATERAL RELATIONS AND</p>
+                <p class="tagline">ACCESS TO COMMERCE IN EAST AFRICA</p>
+            </div>
+        </div>
+
+        <!-- Navigation Ribbon -->
+        <nav class="nav-ribbon">
+            <div class="nav-container">
+                <a href="Pages/Workshops.html" class="nav-link"><i class="fas fa-chalkboard-teacher"></i> Workshops</a>
+                <a href="Pages/Gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                <a href="Pages/Services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> Services</a>
+                <a href="Pages/NewsMedia.html" class="nav-link"><i class="fas fa-newspaper"></i> News & Media</a>
+                <a href="Pages/AboutUs.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
+                <div class="auth-links">
+                    <a href="Pages/SignIn.html" class="nav-link"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                    <a href="Pages/SignUp.html" class="nav-link signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <div class="slideshow-inner">
+            <div class="slide active">
+                <img src="/Assets/CSS/Images/East African landscape.jpg" alt="East African Landscape">
+                <div class="slide-caption">Discover the Beauty of East Africa</div>
+            </div>
+            <div class="slide">
+                <img src="/Assets/CSS/Images/Wildlife.jpg" alt="Wildlife">
+                <div class="slide-caption">Rich Wildlife Diversity</div>
+            </div>
+            <div class="slide">
+                <img src="/Assets/CSS/Images/Culture.jpg" alt="Culture">
+                <div class="slide-caption">Vibrant Cultures</div>
+            </div>
+            <button class="slideshow-pause"><i class="fas fa-pause"></i></button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Combined Map and Mission Section -->
+        <section class="map-mission-section">
+            <div class="section-header">
+                <h2>East African Community</h2>
+                <p>Explore our member states and values</p>
+            </div>
+            <div class="map-mission-container">
+                <!-- East African Map -->
+                <div class="interactive-map">
+                    <img src="/Assets/CSS/Images/New_EAC_map.png" alt="East African Map" usemap="#eamap">
+                    <map name="eamap">
+                        <area shape="poly" coords="..." href="../Countries/kenya.html" alt="Kenya">
+                        <!-- Add coordinates for other countries -->
+                    </map>
+                </div>
+
+                <!-- Mission, Vision, Core Values -->
+                <div class="mission-cards">
+                    <div class="mission-card">
+                        <div>
+                            <div class="card-front">
+                                <i class="fas fa-bullseye"></i>
+                                <h3>Our Mission</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>To promote regional integration, economic growth, and exchange among East African nations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission-card">
+                        <div>
+                            <div class="card-front">
+                                <i class="fas fa-eye"></i>
+                                <h3>Our Vision</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>A united, prosperous, and peaceful East Africa with shared values and opportunities for all.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission-card">
+                        <div>
+                            <div class="card-front">
+                                <i class="fas fa-heart"></i>
+                                <h3>Core Values</h3>
+                            </div>
+                            <div class="card-back">
+                                <ul>
+                                    <li>Unity in Diversity</li>
+                                    <li>Sustainable Development</li>
+                                    <li>Cultural Preservation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Country Flags Grid -->
+        <section class="flags-section">
+            <div class="section-header">
+                <h2>Member States</h2>
+                <p>Click on any flag to explore</p>
+            </div>
+            <div class="flags-grid">
+                <!-- Uganda -->
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/Uganda.png" alt="Uganda Flag">
+                    </div>
+                    <h3>Uganda</h3>
+                    <a href="../Countries/uganda.html" class="explore-btn">Click For Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Kenya -->
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/Kenya.png" alt="Kenya Flag">
+                    </div>
+                    <h3>Kenya</h3>
+                    <a href="../Countries/kenya.html" class="explore-btn">Click For Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Tanzania -->
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/tanzania.png" alt="Tanzania Flag">
+                    </div>
+                    <h3>Tanzania</h3>
+                    <a href="../Countries/tanzania.html" class="explore-btn">Click For Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Rwanda -->
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/Rwanda.png" alt="Rwanda Flag">
+                    </div>
+                    <h3>Rwanda</h3>
+                    <a href="../Countries/rwanda.html" class="explore-btn">Click For Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Burundi -->
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/Burundi.png" alt="Burundi Flag">
+                    </div>
+                    <h3>Burundi</h3>
+                    <a href="../Countries/burundi.html" class="explore-btn">Click For Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- South Sudan -->
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/South-Sudan.png" alt="South Sudan Flag">
+                    </div>
+                    <h3>South Sudan</h3>
+                    <a href="../Countries/South-Sudan.html" class="explore-btn">Click For Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Democratic Republic of Congo -->
+                <div class="flag-card">
+                    <div class="flag-container">
+                        <img src="/Assets/CSS/Images/DRC.png" alt="DRC Flag">
+                    </div>
+                    <h3>DR Congo</h3>
+                    <a href="../Countries/drc.html" class="explore-btn">Click For Info <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- East African Anthem -->
+        <section class="anthem-section">
+            <div class="section-header">
+                <h2>East African Anthem</h2>
+            </div>
+            <div class="anthem-lyrics">
+                <h3>Wimbo wa Jumuiya ya Afrika Mashariki</h3>
+                <p>
+                    <strong>Beti ya Kwanza:</strong><br>
+                    Ee Mungu twaomba ulinde<br>
+                    Jumuiya Afrika Mashariki<br>
+                    Tuungane makini daima<br>
+                    Tuishi kwa amani<br>
+                    Tutimize na malengo yetu<br>
+                    Jumuiya yetu sote tuilinde
+                </p>
+                <p>
+                    <strong>Beti ya Pili:</strong><br>
+                    Uzalendo pia mshikamano<br>
+                    Viwe msingi wa Umoja Wetu<br>
+                    Na tulinde uhuru na amani<br>
+                    Mila zetu na desturi zetu<br>
+                    Viwe msingi wa utamaduni<br>
+                    Jumuiya yetu sote tuilinde
+                </p>
+                <p>
+                    <strong>Beti ya Tatu:</strong><br>
+                    Wananchi wote wa mashariki<br>
+                    Kila siku tuwe na shukrani<br>
+                    Kwa mavuno yetu na kilimo<br>
+                    Taifa litukuzwe<br>
+                    Tuinue sote Jumuiya yetu<br>
+                    Pamoja kwa undugu na amani
+                </p>
+                <p>
+                    <strong>Beti ya Nne:</strong><br>
+                    Jumuiya yetu ya Afrika<br>
+                    Mashariki inaongoza njia<br>
+                    Kwa umoja na ushirikiano<br>
+                    Tuwajibike sote<br>
+                    Tuijenge Jumuiya yetu<br>
+                    Kwa ajili ya vizazi vijavyo
+                </p>
+                <audio controls style="margin-top: 1rem; width: 100%; max-width: 400px; display: block;">
+                    <source src="../../Assets/Audio/east-african-anthem.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3><i class="fas fa-envelope"></i> Get in Touch with Us</h3>
+                <form id="contactForm">
+                    <textarea placeholder="Type your message here..." required></textarea>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-send"><i class="fas fa-paper-plane"></i> Send</button>
+                        <button type="reset" class="btn-clear"><i class="fas fa-eraser"></i> Clear</button>
+                        <button type="button" class="btn-cancel"><i class="fas fa-times"></i> Cancel</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Common Links -->
+            <div class="common-links">
+                <h3><i class="fas fa-link"></i> Common links for All Countries</h3>
+                <ul>
+                    <li><a href="East-African-Heads-of-States.html"><i class="fas fa-users"></i> East African Heads of States</a></li>
+                    <li><a href="Learn-Swahili.html"><i class="fas fa-language"></i> Learn Swahili</a></li>
+                    <li><a href="About-East-African-Passport.html"><i class="fas fa-passport"></i> About East African Passport</a></li>
+                    <li><a href="FAQ.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social-media">
+                <h3><i class="fas fa-hashtag"></i> Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <input type="email" placeholder="Your email">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 <span>[ATUHURIIRE STUART] - [24/1/370/D/124]</span> and <span>[PRINCESS DESIRE] - [24/1/370/D/286]</span></p>
+        </div>
+    </footer>
+
+    <script src="../../Assets/JS/main.js"></script>
+</body>
+</html>
