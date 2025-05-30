@@ -1,1 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Media - Embrace East Africa</title>
+    <link rel="stylesheet" href="../../Assets/CSS/main.css">
+    <style>
+        .news-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
 
+        .news-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .news-card {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .news-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            }
+
+        .news-image {
+            height: 200px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+            .news-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s ease;
+            }
+
+        .news-card:hover .news-image img {
+            transform: scale(1.03);
+        }
+
+        .news-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .news-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+            .news-meta span {
+                display: flex;
+                align-items: center;
+                gap: 0.3rem;
+            }
+
+        .read-more {
+            color: #1abc9c;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 1rem;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+            .read-more:hover {
+                color: #16a085;
+                text-decoration: underline;
+            }
+
+        .news-tag {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .news-card {
+                grid-template-columns: 1fr;
+            }
+
+            .news-image {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation ribbon would go here -->
+
+    <main class="news-container">
+        <div class="news-header">
+            <h1>East Africa News & Media</h1>
+            <p>Stay updated with the latest developments across our region</p>
+        </div>
+
+        <!-- News Article 1 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="/Assets/CSS/Images/East-African-Community-Summit.jpg" alt="EAC Summit">
+            </div>
+            <div class="news-content">
+                <div>
+                    <span class="news-tag">Politics</span>
+                    <h3>East African Community Summit 2023</h3>
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar-alt"></i> November 24, 2023</span>
+                        <span><i class="far fa-user"></i> EAC Secretariat</span>
+                    </div>
+                    <p>Leaders from all member states gathered in Arusha to discuss regional integration, economic cooperation, and the implementation of the common market protocol. Key agreements were reached on cross-border trade facilitation.</p>
+                </div>
+                <a href="#" class="read-more">Read Full Story →</a>
+            </div>
+        </div>
+
+        <!-- News Article 2 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="/Assets/CSS/Images/Regional-Tourism.png" alt="Tourism Growth">
+            </div>
+            <div class="news-content">
+                <div>
+                    <span class="news-tag">Tourism</span>
+                    <h3>Regional Tourism Numbers Reach Record High</h3>
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar-alt"></i> December 5, 2023</span>
+                        <span><i class="far fa-user"></i> Tourism Board</span>
+                    </div>
+                    <p>East Africa welcomed over 5 million international visitors in 2023, marking a 27% increase from pre-pandemic levels. Kenya, Tanzania, and Uganda led the recovery with new visa policies and improved infrastructure.</p>
+                </div>
+                <a href="#" class="read-more">Read Full Story →</a>
+            </div>
+        </div>
+
+        <!-- News Article 3 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="/Assets/CSS/Images/Cross-Border.jpg" alt="Conservation">
+            </div>
+            <div class="news-content">
+                <div>
+                    <span class="news-tag">Environment</span>
+                    <h3>Cross-Border Wildlife Corridor Established</h3>
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar-alt"></i> January 12, 2024</span>
+                        <span><i class="far fa-user"></i> Conservation Foundation</span>
+                    </div>
+                    <p>Kenya and Tanzania have officially launched the Amboseli-Kilimanjaro wildlife corridor, protecting migratory routes for elephants and other species. The initiative includes community conservation programs.</p>
+                </div>
+                <a href="#" class="read-more">Read Full Story →</a>
+            </div>
+        </div>
+
+        <!-- News Article 4 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="/Assets/CSS/Images/Standard-gauge.jpg" alt="Infrastructure">
+            </div>
+            <div class="news-content">
+                <div>
+                    <span class="news-tag">Economy</span>
+                    <h3>Standard Gauge Railway Extension Approved</h3>
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar-alt"></i> February 3, 2024</span>
+                        <span><i class="far fa-user"></i> Transport Ministry</span>
+                    </div>
+                    <p>The EAC heads of state have endorsed the extension of the Standard Gauge Railway from Naivasha to Uganda, with future plans to connect Rwanda and DRC. The project aims to boost regional trade efficiency by 40%.</p>
+                </div>
+                <a href="#" class="read-more">Read Full Story →</a>
+            </div>
+        </div>
+
+        <!-- News Article 5 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="/Assets/CSS/Images/Cultural-Festival.jpg" alt="Culture">
+            </div>
+            <div class="news-content">
+                <div>
+                    <span class="news-tag">Culture</span>
+                    <h3>East African Cultural Festival Returns</h3>
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar-alt"></i> March 15, 2024</span>
+                        <span><i class="far fa-user"></i> Arts Council</span>
+                    </div>
+                    <p>After a 5-year hiatus, the biennial East African Arts and Culture Festival will be held in Kampala this July, featuring performances, exhibitions, and workshops from all member states.</p>
+                </div>
+                <a href="#" class="read-more">Read Full Story →</a>
+            </div>
+        </div>
+
+        <!-- News Article 6 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="/Assets/CSS/Images/University-exchange.jpg" alt="Education">
+            </div>
+            <div class="news-content">
+                <div>
+                    <span class="news-tag">Education</span>
+                    <h3>Regional University Exchange Program Launched</h3>
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar-alt"></i> April 2, 2024</span>
+                        <span><i class="far fa-user"></i> Education Ministry</span>
+                    </div>
+                    <p>Twenty universities across East Africa have established a student and faculty exchange program, with credits fully transferable between institutions. The initiative aims to promote academic collaboration.</p>
+                </div>
+                <a href="#" class="read-more">Read Full Story →</a>
+            </div>
+        </div>
+
+        <!-- News Article 7 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="/Assets/CSS/Images/Tech-hub.jpg" alt="Technology">
+            </div>
+            <div class="news-content">
+                <div>
+                    <span class="news-tag">Technology</span>
+                    <h3>East African Tech Hub Initiative</h3>
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar-alt"></i> May 8, 2024</span>
+                        <span><i class="far fa-user"></i> Innovation Authority</span>
+                    </div>
+                    <p>A network of interconnected tech hubs will be established across major cities in the region to foster innovation and startup growth, with shared resources and mentorship programs.</p>
+                </div>
+                <a href="#" class="read-more">Read Full Story →</a>
+            </div>
+        </div>
+
+        <!-- News Article 8 -->
+        <div class="news-card">
+            <div class="news-image">
+                <img src="/Assets/CSS/Images/Malaria-Eradication.jpg" alt="Health">
+            </div>
+            <div class="news-content">
+                <div>
+                    <span class="news-tag">Health</span>
+                    <h3>Joint Malaria Eradication Campaign</h3>
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar-alt"></i> June 17, 2024</span>
+                        <span><i class="far fa-user"></i> Health Organization</span>
+                    </div>
+                    <p>Member states have launched a coordinated campaign to eliminate malaria in border regions, combining resources and strategies to tackle the disease across the entire East African community.</p>
+                </div>
+                <a href="#" class="read-more">Read Full Story →</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="../Homepage.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
